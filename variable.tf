@@ -1,12 +1,18 @@
-# variables.tf
-
 variable "resource_group_name" {
-  description = "The name of the resource group"
   type        = string
 }
 
 variable "location" {
-  description = "The location where the resource group will be created"
-  type        = string
-  default     = "East US"
+  type    = string
+}
+
+variable "storage_account_name" {
+  type    = string
+}
+
+variable "tags" {
+}
+
+variable "count_value" {
+  type    = number
 }
