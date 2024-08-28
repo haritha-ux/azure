@@ -1,16 +1,12 @@
-variable "resource_group_name" {
-  type        = string
-  description = "name of the storage group"
-  default     = "azure-terraform-group"
+# variables.tf
 
+variable "resource_group_name" {
+  description = "The name of the resource group"
+  type        = string
 }
 
 variable "location" {
-  type    = string
-  default = "uksouth"
-}
-
-variable "storage_account_name" {
-  type    = string
-  default = "Terraformsa2008202412"
+  description = "The location where the resource group will be created"
+  type        = string
+  default     = "East US"
 }
